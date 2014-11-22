@@ -18,3 +18,5 @@
     "test": "node ./server/app.js & mocha server/spec/server-spec.js; RES=$?; kill %1; exit $RES"
   }
 }
+
+// "test": "./node_modules/mocha/bin/mocha test/test.js"

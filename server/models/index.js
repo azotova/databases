@@ -35,8 +35,24 @@ module.exports = {
 
   users: {
     // Ditto as above.
-    get: function () {},
-    post: function () {}
+    get: function (callback) {
+      db.query('select * from users', function (err, results) {
+      	if (err) throw err;
+      	console.log("resultsLookUsers", results);
+      	callback(results);
+      })
+    },
+    post: function (toInsert, callback) {
+      var insertion = [];
+      insertion.push("'"+toInsert.username+"'");
+      insertion = insertion.toString();
+      console.log("insUser", insertion);
+      db.query('insert into users (username) values ('+insertion+')',
+      	        function (err, results){
+      	          if (err) throw err;
+      	          callback();
+               })
+    }
   }
 };
 
