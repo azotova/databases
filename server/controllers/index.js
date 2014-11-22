@@ -18,15 +18,22 @@ module.exports = {
     get: function (req, res) {
     	   models.messages.get(function(resData) {
     	     console.log("obj", resData);
-              utils.sendResponse(res, {results: resData});
+             utils.sendResponse(res, {results: resData});
     	   })
     	//utils.sendResponse(res, {results:messages});
     }, // a function which handles a get request for all messages
     post: function (req, res) {
-      console.log("body", req.body);
-      messages.push(req.body);
-      objectId++;
-      utils.sendResponse(res, {objectId: objectId}, 201);
+            console.log("body", req.body);
+            var timeStamp = String(new Date());
+            timeStamp = "'"+timeStamp.substring(0,24)+"'"
+            objectId++;
+            models.messages.post(req.body, timeStamp, objectId, function(){
+              console.log("put in db");
+              utils.sendResponse(res, {objectId: objectId}, 201);
+            })
+      
+      /*messages.push(req.body);
+      utils.sendResponse(res, {objectId: objectId}, 201);*/
     } // a function which handles posting a message to the database
   },
 
