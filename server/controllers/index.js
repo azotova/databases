@@ -22,12 +22,7 @@ module.exports = {
       console.log("body", req.body);
       messages.push(req.body);
       objectId++;
-      utils.sendResponse(response, {objectId: objectId}, 201);
-      /*utils.collectData(req, function(message){
-        message.objectId = ++objectId;
-        messages.push(message);
-        utils.sendResponse(response, {objectId: objectId});
-      });*/
+      utils.sendResponse(res, {objectId: objectId}, 201);
     } // a function which handles posting a message to the database
   },
 

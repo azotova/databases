@@ -12,14 +12,3 @@ exports.sendResponse = function(response, data, statusCode){
   response.end(JSON.stringify(data));
 };
 
-exports.collectData = function(request, callback){
-  console.log("started collecting");
-  var data = "";
-  request.on('data', function(chunk){
-    data += chunk;
-  });
-  request.on('end', function(){
-    console.log("data", data);
-    callback(JSON.parse(data));
-  });
-};
