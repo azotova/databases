@@ -16,7 +16,11 @@ var messages = [
 module.exports = {
   messages: {
     get: function (req, res) {
-      utils.sendResponse(res, {results: messages});
+    	   models.messages.get(function(resData) {
+    	     console.log("obj", resData);
+              utils.sendResponse(res, {results: resData});
+    	   })
+    	//utils.sendResponse(res, {results:messages});
     }, // a function which handles a get request for all messages
     post: function (req, res) {
       console.log("body", req.body);
