@@ -41,7 +41,7 @@ module.exports = {
     // Ditto as above
     get: function (req, res) {},
     post: function (req, res) {
-      models.messages.post(req.body, function(){
+      models.users.post(req.body, function(){
         console.log("user put in db");
         utils.sendResponse(res, {objectId: 1}, 201);
       });

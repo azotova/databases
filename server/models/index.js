@@ -19,7 +19,11 @@ module.exports = {
       insertion.push(timeStamp);
       insertion.push(String(objectId));
       insertion.push("'"+toInsert.roomname+"'");
-      insertion.push("'"+toInsert.text+"'")
+      if (toInsert.text) {
+        insertion.push(db.escape(toInsert.text)); 	
+      } else {
+      	insertion.push(db.escape(toInsert.message)); 
+      }
       insertion.push(timeStamp)
       insertion.push("'"+toInsert.username+"'");
       insertion = insertion.toString();
