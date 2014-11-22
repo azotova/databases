@@ -1,7 +1,5 @@
 var express = require('express');
 var db = require('./db');
-var requ = require("./request-handler.js");
-var handleRequest = requ.requestHandler;
 var url = require('url');
 var path = require('path');
 

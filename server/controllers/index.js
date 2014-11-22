@@ -19,11 +19,15 @@ module.exports = {
       utils.sendResponse(res, {results: messages});
     }, // a function which handles a get request for all messages
     post: function (req, res) {
-      utils.collectData(req, function(message){
+      console.log("body", req.body);
+      messages.push(req.body);
+      objectId++;
+      utils.sendResponse(response, {objectId: objectId}, 201);
+      /*utils.collectData(req, function(message){
         message.objectId = ++objectId;
         messages.push(message);
         utils.sendResponse(response, {objectId: objectId});
-      });
+      });*/
     } // a function which handles posting a message to the database
   },
 
