@@ -87,3 +87,723 @@ This is needed to see where the database is stored;
 
 **************************************
 
+Last login: Fri Nov 21 15:48:00 on ttys001
+MacBook-Pro:~ anastasiazotova$ mysql.server stop
+Shutting down MySQL
+.... SUCCESS! 
+MacBook-Pro:~ anastasiazotova$ cd hr
+MacBook-Pro:hr anastasiazotova$ cd 2014-10-databases/
+MacBook-Pro:2014-10-databases anastasiazotova$ npm install --save underscore
+npm info it worked if it ends with ok
+npm verb cli [ '/usr/local/bin/node',
+npm verb cli   '/usr/local/bin/npm',
+
+npm info ok 
+MacBook-Pro:2014-10-databases anastasiazotova$ npm install --save mysql
+npm info it worked if it ends with ok
+npm verb saving { mysql: '^2.5.3' }
+npm verb exit [ 0, true ]
+npm info ok 
+MacBook-Pro:2014-10-databases anastasiazotova$ cd ~
+MacBook-Pro:~ anastasiazotova$ cd Documents
+MacBook-Pro:Documents anastasiazotova$ ls
+2014-10-chatterbox-client		Shortcuts
+CORS.pages				Terminal Saved Output
+Computational complexity.pages		Terminal Saved Output1
+Express lectures notes			Test driven development.pages
+Extend vs prototype chains.pages	Untitled.pages
+JobSearch presentation v1.key		jqMathLaTex.js
+JobSearch presentation v2.key		lib
+MixinClass.pages			stopping.js
+Notes from closures downtown.pages	Письмо.pages
+MacBook-Pro:Documents anastasiazotova$ cd ~
+MacBook-Pro:~ anastasiazotova$ ls
+2014-10-data-structures			Downloads
+2014-10-javascript-koans		Library
+2014-10-self-assessments-week-0		Movies
+2014-10-self-assessments-week-01	Music
+2014-10-underbar			Pictures
+2014-10-underbar-redux			Public
+Applications				bitclass-data
+Desktop					edvance
+Documents				hr
+MacBook-Pro:~ anastasiazotova$ cd hr
+MacBook-Pro:hr anastasiazotova$ cd 2014-10-databases/
+MacBook-Pro:2014-10-databases anastasiazotova$ cp -r ~/Documents/2014-10-chatterbox-client/ ~/Documents/hr/2014-10-databases/client
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client/: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.bowerrc: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/config: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/description: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/HEAD: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/hooks: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/hooks: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/hooks: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/hooks/applypatch-msg.sample: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/hooks/commit-msg.sample: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/hooks/post-update.sample: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/hooks/pre-applypatch.sample: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/hooks/pre-commit.sample: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/hooks/pre-push.sample: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/hooks/pre-rebase.sample: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/hooks/prepare-commit-msg.sample: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/hooks/update.sample: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/index: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/info: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/info: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/info: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/info/exclude: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/logs: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/logs: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/logs: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/logs/HEAD: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/logs/refs: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/logs/refs: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/logs/refs: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/logs/refs/heads: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/logs/refs/heads: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/logs/refs/heads: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/logs/refs/heads/canonical: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/logs/refs/heads/master: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/logs/refs/remotes: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/logs/refs/remotes: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/logs/refs/remotes: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/logs/refs/remotes/origin: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/logs/refs/remotes/origin: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/logs/refs/remotes/origin: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/logs/refs/remotes/origin/HEAD: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/03: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/03: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/03: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/03/d2ed0c54f0c363523edd4352d4d25819eedea4: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/04: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/04: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/04: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/04/3700abbbebef6bafdeda1db6cdc036230e5db5: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/0d: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/0d: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/0d: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/0d/f55a9239d0f8a5acb0b25f5a860a542d290a06: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/10: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/10: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/10: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/10/5977f2307f26ce9c8f09869863bd13df1cda06: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/14: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/14: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/14: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/14/d7b08cd11dadde6fa9490f99409a7792ff9166: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/18: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/18: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/18: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/18/6c449ec7ea40483390e176312592bba0c7db0c: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/19: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/19: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/19: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/19/690813e07e884b4c20beda7c822431efe2491a: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/1b: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/1b: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/1b: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/1b/362c57fd5b06faed59c58d27e0c472fc91ef5e: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/1f: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/1f: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/1f: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/1f/a8cd37125511c0835784d978ba4a37da46d703: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/24: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/24: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/24: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/24/4029e397e33148e55ff56445e5e663ef7b0ae6: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/26: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/26: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/26: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/26/c4bd9c46b3f67d647a819c1cfcee70b5ee006f: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/26/d918618b2d06fda6bdd4d93e99b818419f8dd7: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/2a: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/2a: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/2a: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/2a/9057ea51b906961867f80a9c9f1b570af5492f: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/2b: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/2b: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/2b: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/2b/e730b50f20ea0a7ab4fed568d305d80cbf87b6: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/34: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/34: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/34: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/34/3053afdb47c72be8651b48d15828f95aa028c1: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/38: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/38: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/38: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/38/a0034fb7f11ecdd40e4806d058244d08fc40c6: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/39: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/39: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/39: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/39/ed78fe65d5c4648d08d5704046c77426674e60: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/3a: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/3a: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/3a: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/3a/616c89bcf7841a2883dd641a7edf0362a07b51: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/3b: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/3b: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/3b: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/3b/b8e49afdc741cc1944bf9f25eee58d0bf73f1e: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/44: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/44: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/44: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/44/ad30f7d0b58db2b96112d99e76b134df53f4ba: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/4b: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/4b: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/4b: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/4b/4c89603622a40e9d54eaffc49efd27b75822c5: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/55: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/55: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/55: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/55/7891f35814f67ca4fec660ae08ef0ec6d6ec37: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/5b: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/5b: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/5b: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/5b/51f3cccbb636446b1330cf7010c9d0aa0bc4ab: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/5d: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/5d: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/5d: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/5d/727acc686620b388c342669cb8f6649e0aa3e9: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/63: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/63: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/63: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/63/62d0f3394e4a90561ab33c0650d32572ae4d93: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/66: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/66: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/66: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/66/6f3474551d0a560362d7201f39f957ab2d06b3: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/6a: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/6a: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/6a: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/6a/6c4c666f4891bb44cd7be996cce49eedbde0db: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/6e: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/6e: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/6e: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/6e/60bda8f89b65aeb4d894455680a61610e2b5b1: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/6f: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/6f: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/6f: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/6f/cb4cc081c02fa5ce25aa045315860173e68bcb: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/71: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/71: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/71: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/71/14001091ead23035a0e9165cbfec2525cda0f4: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/80: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/80: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/80: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/80/17cf61550b60738875dccdbad768477acc26cb: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/80/f7b4f850c4348aaca28c621556dda2624df1bb: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/85: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/85: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/85: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/85/6d32ada055be08ec9d05c439e5d693a9013ff2: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/88: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/88: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/88: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/88/3d44bbf293ccd53678d355ab0d35f08305f568: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/88/73258032a4a9cbdd6a187f1dcf9b6c521d09f0: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/91: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/91: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/91: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/91/cc746a38c219e076e51d257d368edd0bae9130: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/93: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/93: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/93: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/93/618abd4da6093f2c8d6453f18b9ff87b2869a1: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/99: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/99: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/99: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/99/9e9303d8c1f2b3a4d30daf1afa3394388f2dc1: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/9a: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/9a: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/9a: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/9a/dc9379e2e7a267129eac92e1a28f35d103fa83: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/9e: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/9e: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/9e: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/9e/de71cc5c9162736e753f83e5b18c47e988dc39: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/a0: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/a0: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/a0: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/a0/261d8753b80a2d9610d552f680432c9c1d5d24: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/a0/da0b2cb9de5ba9c14bcd1b856896013f8747b3: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/ad: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/ad: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/ad: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/ad/48363612bc8259ecee21bb9845b0e259786b10: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/af: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/af: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/af: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/af/5507278d8137cd63c85e68c2c0a2c21fbb662b: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/b7: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/b7: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/b7: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/b7/df222295a215ecb1952ee8c0a5c6fbaede51c5: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/b8: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/b8: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/b8: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/b8/6262f4761ddbef361ed6878c123527428c994e: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/bd: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/bd: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/bd: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/bd/fc355649cb1a3cd4abfd17d926ae494f568ea1: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/c3: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/c3: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/c3: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/c3/aa10a6997f1c2c2cc48709338bae2b5607c647: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/c3/d42774ffd067665fad7d069535f862de19d0cc: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/d3: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/d3: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/d3: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/d3/1f61c4ae39fc188ac35e4e506881a6c01d77e1: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/d4: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/d4: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/d4: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/d4/fb61347905d7c67367d5b7bcc906c39c0fead4: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/dd: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/dd: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/dd: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/dd/a66c546f65e88776f704a33a899a015ef17aaa: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/e0: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/e0: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/e0: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/e0/29814478694d422a2ffbf353a22cdd9f79ab77: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/e3: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/e3: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/e3: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/e3/75eb8fd1456c18a24f1cd3824798315d33dece: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/ea: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/ea: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/ea: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/ea/482312c3be2f03ef6264717b9e1439d4f7f3e6: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/ed: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/ed: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/ed: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/ed/7fbe19414a44e7006c431ce886a90d4de95d55: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/f5: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/f5: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/f5: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/f5/329dfd008f7533400f8dfafa0fb48e28df7301: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/info: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/info: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/info: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/pack: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/pack: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/pack: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/packed-refs: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/refs: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/refs: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/refs: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/refs/heads: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/refs/heads: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/refs/heads: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/refs/heads/canonical: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/refs/heads/master: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/refs/remotes: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/refs/remotes: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/refs/remotes: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/refs/remotes/origin: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/refs/remotes/origin: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/refs/remotes/origin: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/refs/remotes/origin/HEAD: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/refs/tags: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/refs/tags: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/refs/tags: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.gitignore: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/bower.json: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/client: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//client: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/client: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/client/env: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//client/env: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/client/env: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/client/env/config.example.js: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/client/images: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//client/images: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/client/images: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/client/images/spiffygif_46x46.gif: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/client/index.html: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/client/scripts: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//client/scripts: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/client/scripts: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/client/scripts/app.js: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/client/styles: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//client/styles: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/client/styles: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/client/styles/styles.css: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/lib: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//lib: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/lib: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/lib/chai: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//lib/chai: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/lib/chai: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/lib/chai/chai.js: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/lib/jquery.js: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/lib/mocha: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//lib/mocha: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/lib/mocha: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/lib/mocha/mocha.css: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/lib/mocha/mocha.js: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/lib/sinon: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//lib/sinon: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/lib/sinon: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/lib/sinon/sinon.js: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/spec: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//spec: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/spec: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/spec/chatterboxSpec.js: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/SpecRunner.html: No such file or directory
+MacBook-Pro:2014-10-databases anastasiazotova$ mkdir client
+MacBook-Pro:2014-10-databases anastasiazotova$ ls
+MySQL download instructions	orm-resources
+client				package.json
+node_modules			server
+non-relational-resources
+MacBook-Pro:2014-10-databases anastasiazotova$ cp -r ~/Documents/2014-10-chatterbox-client/ ~/Documents/hr/2014-10-databases/client
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client/: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.bowerrc: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/config: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/description: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/HEAD: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/hooks: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/hooks: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/hooks: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/hooks/applypatch-msg.sample: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/hooks/commit-msg.sample: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/hooks/post-update.sample: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/hooks/pre-applypatch.sample: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/hooks/pre-commit.sample: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/hooks/pre-push.sample: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/hooks/pre-rebase.sample: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/hooks/prepare-commit-msg.sample: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/hooks/update.sample: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/index: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/info: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/info: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/info: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/info/exclude: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/logs: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/logs: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/logs: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/logs/HEAD: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/logs/refs: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/logs/refs: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/logs/refs: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/logs/refs/heads: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/logs/refs/heads: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/logs/refs/heads: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/logs/refs/heads/canonical: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/logs/refs/heads/master: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/logs/refs/remotes: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/logs/refs/remotes: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/logs/refs/remotes: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/logs/refs/remotes/origin: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/logs/refs/remotes/origin: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/logs/refs/remotes/origin: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/logs/refs/remotes/origin/HEAD: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/03: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/03: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/03: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/03/d2ed0c54f0c363523edd4352d4d25819eedea4: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/04: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/04: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/04: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/04/3700abbbebef6bafdeda1db6cdc036230e5db5: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/0d: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/0d: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/0d: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/0d/f55a9239d0f8a5acb0b25f5a860a542d290a06: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/10: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/10: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/10: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/10/5977f2307f26ce9c8f09869863bd13df1cda06: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/14: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/14: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/14: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/14/d7b08cd11dadde6fa9490f99409a7792ff9166: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/18: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/18: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/18: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/18/6c449ec7ea40483390e176312592bba0c7db0c: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/19: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/19: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/19: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/19/690813e07e884b4c20beda7c822431efe2491a: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/1b: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/1b: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/1b: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/1b/362c57fd5b06faed59c58d27e0c472fc91ef5e: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/1f: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/1f: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/1f: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/1f/a8cd37125511c0835784d978ba4a37da46d703: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/24: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/24: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/24: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/24/4029e397e33148e55ff56445e5e663ef7b0ae6: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/26: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/26: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/26: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/26/c4bd9c46b3f67d647a819c1cfcee70b5ee006f: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/26/d918618b2d06fda6bdd4d93e99b818419f8dd7: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/2a: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/2a: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/2a: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/2a/9057ea51b906961867f80a9c9f1b570af5492f: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/2b: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/2b: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/2b: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/2b/e730b50f20ea0a7ab4fed568d305d80cbf87b6: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/34: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/34: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/34: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/34/3053afdb47c72be8651b48d15828f95aa028c1: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/38: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/38: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/38: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/38/a0034fb7f11ecdd40e4806d058244d08fc40c6: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/39: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/39: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/39: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/39/ed78fe65d5c4648d08d5704046c77426674e60: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/3a: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/3a: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/3a: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/3a/616c89bcf7841a2883dd641a7edf0362a07b51: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/3b: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/3b: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/3b: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/3b/b8e49afdc741cc1944bf9f25eee58d0bf73f1e: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/44: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/44: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/44: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/44/ad30f7d0b58db2b96112d99e76b134df53f4ba: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/4b: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/4b: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/4b: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/4b/4c89603622a40e9d54eaffc49efd27b75822c5: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/55: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/55: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/55: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/55/7891f35814f67ca4fec660ae08ef0ec6d6ec37: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/5b: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/5b: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/5b: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/5b/51f3cccbb636446b1330cf7010c9d0aa0bc4ab: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/5d: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/5d: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/5d: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/5d/727acc686620b388c342669cb8f6649e0aa3e9: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/63: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/63: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/63: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/63/62d0f3394e4a90561ab33c0650d32572ae4d93: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/66: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/66: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/66: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/66/6f3474551d0a560362d7201f39f957ab2d06b3: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/6a: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/6a: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/6a: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/6a/6c4c666f4891bb44cd7be996cce49eedbde0db: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/6e: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/6e: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/6e: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/6e/60bda8f89b65aeb4d894455680a61610e2b5b1: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/6f: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/6f: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/6f: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/6f/cb4cc081c02fa5ce25aa045315860173e68bcb: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/71: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/71: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/71: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/71/14001091ead23035a0e9165cbfec2525cda0f4: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/80: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/80: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/80: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/80/17cf61550b60738875dccdbad768477acc26cb: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/80/f7b4f850c4348aaca28c621556dda2624df1bb: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/85: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/85: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/85: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/85/6d32ada055be08ec9d05c439e5d693a9013ff2: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/88: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/88: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/88: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/88/3d44bbf293ccd53678d355ab0d35f08305f568: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/88/73258032a4a9cbdd6a187f1dcf9b6c521d09f0: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/91: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/91: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/91: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/91/cc746a38c219e076e51d257d368edd0bae9130: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/93: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/93: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/93: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/93/618abd4da6093f2c8d6453f18b9ff87b2869a1: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/99: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/99: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/99: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/99/9e9303d8c1f2b3a4d30daf1afa3394388f2dc1: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/9a: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/9a: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/9a: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/9a/dc9379e2e7a267129eac92e1a28f35d103fa83: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/9e: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/9e: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/9e: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/9e/de71cc5c9162736e753f83e5b18c47e988dc39: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/a0: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/a0: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/a0: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/a0/261d8753b80a2d9610d552f680432c9c1d5d24: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/a0/da0b2cb9de5ba9c14bcd1b856896013f8747b3: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/ad: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/ad: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/ad: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/ad/48363612bc8259ecee21bb9845b0e259786b10: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/af: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/af: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/af: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/af/5507278d8137cd63c85e68c2c0a2c21fbb662b: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/b7: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/b7: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/b7: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/b7/df222295a215ecb1952ee8c0a5c6fbaede51c5: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/b8: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/b8: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/b8: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/b8/6262f4761ddbef361ed6878c123527428c994e: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/bd: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/bd: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/bd: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/bd/fc355649cb1a3cd4abfd17d926ae494f568ea1: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/c3: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/c3: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/c3: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/c3/aa10a6997f1c2c2cc48709338bae2b5607c647: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/c3/d42774ffd067665fad7d069535f862de19d0cc: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/d3: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/d3: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/d3: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/d3/1f61c4ae39fc188ac35e4e506881a6c01d77e1: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/d4: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/d4: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/d4: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/d4/fb61347905d7c67367d5b7bcc906c39c0fead4: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/dd: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/dd: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/dd: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/dd/a66c546f65e88776f704a33a899a015ef17aaa: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/e0: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/e0: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/e0: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/e0/29814478694d422a2ffbf353a22cdd9f79ab77: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/e3: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/e3: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/e3: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/e3/75eb8fd1456c18a24f1cd3824798315d33dece: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/ea: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/ea: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/ea: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/ea/482312c3be2f03ef6264717b9e1439d4f7f3e6: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/ed: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/ed: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/ed: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/ed/7fbe19414a44e7006c431ce886a90d4de95d55: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/f5: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/f5: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/f5: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/f5/329dfd008f7533400f8dfafa0fb48e28df7301: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/info: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/info: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/info: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/pack: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/objects/pack: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/objects/pack: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/packed-refs: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/refs: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/refs: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/refs: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/refs/heads: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/refs/heads: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/refs/heads: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/refs/heads/canonical: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/refs/heads/master: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/refs/remotes: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/refs/remotes: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/refs/remotes: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/refs/remotes/origin: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/refs/remotes/origin: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/refs/remotes/origin: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/refs/remotes/origin/HEAD: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/refs/tags: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//.git/refs/tags: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.git/refs/tags: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/.gitignore: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/bower.json: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/client: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//client: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/client: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/client/env: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//client/env: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/client/env: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/client/env/config.example.js: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/client/images: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//client/images: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/client/images: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/client/images/spiffygif_46x46.gif: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/client/index.html: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/client/scripts: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//client/scripts: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/client/scripts: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/client/scripts/app.js: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/client/styles: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//client/styles: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/client/styles: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/client/styles/styles.css: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/lib: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//lib: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/lib: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/lib/chai: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//lib/chai: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/lib/chai: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/lib/chai/chai.js: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/lib/jquery.js: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/lib/mocha: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//lib/mocha: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/lib/mocha: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/lib/mocha/mocha.css: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/lib/mocha/mocha.js: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/lib/sinon: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//lib/sinon: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/lib/sinon: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/lib/sinon/sinon.js: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/spec: No such file or directory
+cp: /Users/anastasiazotova/Documents/2014-10-chatterbox-client//spec: unable to copy extended attributes to /Users/anastasiazotova/Documents/hr/2014-10-databases/client/spec: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/spec/chatterboxSpec.js: No such file or directory
+cp: /Users/anastasiazotova/Documents/hr/2014-10-databases/client/SpecRunner.html: No such file or directory
+MacBook-Pro:2014-10-databases anastasiazotova$ cp -r ~/Documents/2014-10-chatterbox-client/ ~/hr/2014-10-databases/client
+MacBook-Pro:2014-10-databases anastasiazotova$ ls
+MySQL download instructions	orm-resources
+client				package.json
+node_modules			server
+non-relational-resources
+MacBook-Pro:2014-10-databases anastasiazotova$ cd client
+MacBook-Pro:client anastasiazotova$ ls
+SpecRunner.html	bower.json	client		lib		spec
+MacBook-Pro:client anastasiazotova$ bower install
+bower cached        git://github.com/jquery/jquery.git#2.0.3
+bower validate      2.0.3 against git://github.com/jquery/jquery.git#~2.0.3
+bower install       jquery#2.0.3
+
+jquery#2.0.3 client/bower_components/jquery
+MacBook-Pro:client anastasiazotova$ cd ..
+MacBook-Pro:2014-10-databases anastasiazotova$ cd client
+MacBook-Pro:client anastasiazotova$ ls
+SpecRunner.html	bower.json	client		lib		spec
+MacBook-Pro:client anastasiazotova$ cd client
+MacBook-Pro:client anastasiazotova$ ls
+bower_components	images			scripts
+env			index.html		styles
+MacBook-Pro:client anastasiazotova$ open index.html
+MacBook-Pro:client anastasiazotova$ cd client
+-bash: cd: client: No such file or directory
+MacBook-Pro:client anastasiazotova$ cd env
+MacBook-Pro:env anastasiazotova$ ls
+config.example.js
+MacBook-Pro:env anastasiazotova$ subl config.example.js 
+MacBook-Pro:env anastasiazotova$ mv config.example.js config.js
+MacBook-Pro:env anastasiazotova$ ls
+config.js
+MacBook-Pro:env anastasiazotova$ cd ..
+MacBook-Pro:client anastasiazotova$ ls
+bower_components	images			scripts
+env			index.html		styles
+MacBook-Pro:client anastasiazotova$ cd scripts/
+MacBook-Pro:scripts anastasiazotova$ ls
+app.js
+MacBook-Pro:scripts anastasiazotova$ subl app.js 
+MacBook-Pro:scripts anastasiazotova$ cd ..
+MacBook-Pro:client anastasiazotova$ cd ..
+MacBook-Pro:client anastasiazotova$ cd ..
+MacBook-Pro:2014-10-databases anastasiazotova$ cd server
+MacBook-Pro:server anastasiazotova$ ls
+app.js		db		routes.js	spec
+controllers	models		schema.sql
+MacBook-Pro:server anastasiazotova$ node app.js
+Listening on 3000
+GET / 404 5.455 ms - 13
+GET /favicon.ico 404 3.894 ms - 24
+^CMacBook-Pro:server anastasiazotova$ which nodemon
+/usr/local/bin/nodemon
+MacBook-Pro:server anastasiazotova$ mysql.server start
+Starting MySQL
+. SUCCESS! 
+MacBook-Pro:server anastasiazotova$ cd ..
+MacBook-Pro:2014-10-databases anastasiazotova$ mysql-u root<server/schema.sql
+-bash: mysql-u: command not found
+MacBook-Pro:2014-10-databases anastasiazotova$ mysql -u root<server/schema.sql
+MacBook-Pro:2014-10-databases anastasiazotova$ mysql -u root
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 2
+Server version: 5.6.21 Homebrew
+
+Copyright (c) 2000, 2014, Oracle and/or its affiliates. All rights reserved.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> SHOW DATABASES;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| chat               |
+| mysql              |
+| performance_schema |
+| test               |
+| test_database      |
++--------------------+
+6 rows in set (0.01 sec)
+
+mysql> use chat
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Database changed
+mysql> SHOW TABLES;
++----------------+
+| Tables_in_chat |
++----------------+
+| messages       |
+| rooms          |
+| users          |
++----------------+
+3 rows in set (0.00 sec)
+
+mysql> describe users;
++----------+-------------+------+-----+---------+----------------+
+| Field    | Type        | Null | Key | Default | Extra          |
++----------+-------------+------+-----+---------+----------------+
+| username | varchar(50) | YES  |     | NULL    |                |
+| ID       | int(11)     | NO   | PRI | NULL    | auto_increment |
++----------+-------------+------+-----+---------+----------------+
+2 rows in set (0.01 sec)
+
+mysql> describe messages
+    -> ;
++-------------+---------------+------+-----+---------+----------------+
+| Field       | Type          | Null | Key | Default | Extra          |
++-------------+---------------+------+-----+---------+----------------+
+| createdAt   | varchar(50)   | YES  |     | NULL    |                |
+| objectId    | varchar(50)   | YES  |     | NULL    |                |
+| roomname    | varchar(50)   | YES  |     | NULL    |                |
+| messageText | varchar(1000) | YES  |     | NULL    |                |
+| updatedAt   | varchar(1000) | YES  |     | NULL    |                |
+| username    | varchar(50)   | YES  |     | NULL    |                |
+| ID          | int(11)       | NO   | PRI | NULL    | auto_increment |
++-------------+---------------+------+-----+---------+----------------+
+7 rows in set (0.01 sec)
+
+mysql> DROP messages;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'messages' at line 1
+mysql> drop messages;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'messages' at line 1
+mysql> insert into messages (createdAt, objectId, roomname, messageText,updatedAt, username) values ('Mary', 'Jones', 'loobb', 'randib', 'randtimr','sserr');
+Query OK, 1 row affected (0.01 sec)
+
+mysql> show messages
+    -> ;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'messages' at line 1
+mysql> SHOW messages;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'messages' at line 1
+mysql> SHOW messages();
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'messages()' at line 1
+mysql> select * from messages;
++-----------+----------+----------+-------------+-----------+----------+----+
+| createdAt | objectId | roomname | messageText | updatedAt | username | ID |
++-----------+----------+----------+-------------+-----------+----------+----+
+| Mary      | Jones    | loobb    | randib      | randtimr  | sserr    |  1 |
++-----------+----------+----------+-------------+-----------+----------+----+
+1 row in set (0.01 sec)
+
+mysql> insert into messages set roomname = {room}, messageText = {newMess}, username = {whois};
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '}, messageText = {newMess}, username = {whois}' at line 1
+mysql> insert into messages (createdAt, objectId, roomname, messageText,updatedAt, username) values (Sat Nov 22 2014 01:24:56 GMT-0800 (PST),2,loobb,Mary speaking,Sat Nov 22 2014 01:24:56 GMT-0800 (PST),NewUser)
+    -> ;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Nov 22 2014 01:24:56 GMT-0800 (PST),2,loobb,Mary speaking,Sat Nov 22 2014 01:24:' at line 1
+mysql> insert into messages (createdAt, objectId, roomname, messageText,updatedAt, username) values ('Mary', 'Jones', 'loobb', 'randib', 'randtimr',sserr);
+ERROR 1054 (42S22): Unknown column 'sserr' in 'field list'
+mysql> drop chat;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'chat' at line 1
+mysql> DROP DATABASE;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+mysql> drop database;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+mysql> drop table messages;
+Query OK, 0 rows affected (0.01 sec)
+
+mysql> 
+

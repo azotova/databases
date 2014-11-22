@@ -25,7 +25,7 @@ module.exports = {
       insertion = insertion.toString();
       console.log("ins", insertion);
       console.log("query", 'insert into messages (createdAt, objectId, roomname, text, updatedAt, username) values ('+insertion+')');
-      db.query('insert into messages (createdAt, objectId, roomname, messageText,updatedAt, username) values ('+insertion+')',
+      db.query('insert into messages (createdAt, objectId, roomname, text,updatedAt, username) values ('+insertion+')',
       	        function (err, results){
       	          if (err) throw err;
       	          callback();

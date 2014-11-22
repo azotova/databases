@@ -7,7 +7,7 @@ CREATE TABLE messages (
 createdAt varchar(50),
 objectId varchar(50),
 roomname varchar(50),
-messageText varchar (1000),
+text varchar (1000),
 updatedAt varchar (1000),
 username varchar(50),
 ID int(11) NOT NULL auto_increment, PRIMARY KEY (ID)
