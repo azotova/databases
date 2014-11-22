@@ -1,0 +1,89 @@
+A "/etc/my.cnf" from another install may interfere with a Homebrew-built
+server starting up correctly.
+
+To connect:
+    mysql -uroot
+
+To have launchd start mysql at login:
+    ln -sfv /usr/local/opt/mysql/*.plist ~/Library/LaunchAgents
+Then to load mysql now:
+    launchctl load ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist
+Or, if you don't want/need launchctl, you can just run:
+    mysql.server start
+
+*******************************
+The message on mysql -u root
+
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 1
+Server version: 5.6.21 Homebrew
+
+Copyright (c) 2000, 2014, Oracle and/or its affiliates. All rights reserved.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+
+********************************
+mysql> CREATE DATABASE test_database;
+Query OK, 1 row affected (0.01 sec)
+
+mysql> CREATE TABLE users (first VARCHAR(20), last VARCHAR(20), age NUMBER(3), ID int(11) NOT NULL auto_increment, PRIMARY KEY (ID));
+ERROR 1046 (3D000): No database selected
+mysql> USE test_database;
+Database changed
+mysql> CREATE TABLE users (first VARCHAR(20), last VARCHAR(20), age NUMBER(3), ID int(11) NOT NULL auto_increment, PRIMARY KEY (ID));
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'NUMBER(3), ID int(11) NOT NULL auto_increment, PRIMARY KEY (ID))' at line 1
+mysql> CREATE TABLE users (first VARCHAR(20), last VARCHAR(20), age INT(3), ID int(11) NOT NULL auto_increment, PRIMARY KEY (ID));
+Query OK, 0 rows affected (0.03 sec)
+
+mysql> insert into users (first, last, age) values ('Mary', 'Jones', 35);
+Query OK, 1 row affected (0.00 sec)
+
+mysql> describe users
+    -> ;
++-------+-------------+------+-----+---------+----------------+
+| Field | Type        | Null | Key | Default | Extra          |
++-------+-------------+------+-----+---------+----------------+
+| first | varchar(20) | YES  |     | NULL    |                |
+| last  | varchar(20) | YES  |     | NULL    |                |
+| age   | int(3)      | YES  |     | NULL    |                |
+| ID    | int(11)     | NO   | PRI | NULL    | auto_increment |
++-------+-------------+------+-----+---------+----------------+
+4 rows in set (0.00 sec)
+
+mysql> insert into users (first, last, age) values ('Anna', 'Jones', 25);
+Query OK, 1 row affected (0.01 sec)
+
+mysql> SHOW users
+    -> ;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'users' at line 1
+mysql> SELECT * FROM users;
++-------+-------+------+----+
+| first | last  | age  | ID |
++-------+-------+------+----+
+| Mary  | Jones |   35 |  1 |
+| Anna  | Jones |   25 |  2 |
++-------+-------+------+----+
+2 rows in set (0.00 sec)
+
+mysql> SELECT * FROM users where age>30;
++-------+-------+------+----+
+| first | last  | age  | ID |
++-------+-------+------+----+
+| Mary  | Jones |   35 |  1 |
++-------+-------+------+----+
+1 row in set (0.00 sec)
+
+*************************************
+Run this query:
+
+SELECT @@datadir, @@innodb_data_home_dir
+
+This is needed to see where the database is stored;
+
+**************************************
+
