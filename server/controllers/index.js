@@ -1,12 +1,30 @@
 var models = require('../models');
 var bluebird = require('bluebird');
+var utils = require('./utils.js')
 
+var objectId = 1;
+
+var messages = [
+  {
+    text: 'hello world',
+    username: 'fred',
+    objectId: objectId
+  }
+];
 
 
 module.exports = {
   messages: {
-    get: function (req, res) {}, // a function which handles a get request for all messages
-    post: function (req, res) {} // a function which handles posting a message to the database
+    get: function (req, res) {
+      utils.sendResponse(res, {results: messages});
+    }, // a function which handles a get request for all messages
+    post: function (req, res) {
+      utils.collectData(req, function(message){
+        message.objectId = ++objectId;
+        messages.push(message);
+        utils.sendResponse(response, {objectId: objectId});
+      });
+    } // a function which handles posting a message to the database
   },
 
   users: {
